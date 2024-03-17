@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 100px;
+    margin-top: 20px;
+    background-color:blanchedalmond;
+   
+   
+}
+
+.navleft{
+    border: 1px solid black;
+    margin: 30px;
+    padding: 3px;
+    font-family: 'Roboto Slab', serif;
+    color:rgb(25, 175, 165);
+}
+
+.searchbar {
+   display: flex;
+   align-items: center;
+ }
+ 
+
+ 
+
+ 
+
+
+.navlinks{
+    margin-top: 10px;
+}
+
+.navlinks ul{
+    display: flex;
+    border: 1px solid red;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+   
+  
+    
+}
+
+ .navlinks a{
+    text-decoration: none;
+    margin: 30px;
+    color:rgb(25, 175, 165);
+    
+}
+
+.navlinks ul li{
+    list-style: none;
+}
+
+.navlinks ul  a{
+    padding: 12px 8px;
+    font-weight: bolder;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    }
+
+     .navlinks  a:hover{
+        color: rgb(184, 141, 92);
+        
+    }
+
+ .cards{
+   
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20vh;
+ }
+
+ .card1{
+    border: 2px solid black;
+    height: 50vh;
+    width: 30vh;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url(bravingbird-GuPYhQTb6Fw-unsplash.jpg);
+ }
+
+ .card1 h3{
+   font-size: 3em;
+ }
+
+ .card2{
+    border: 2px solid rgb(185, 108, 12);
+    height: 50vh;
+    width: 30vh;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: beige;
+    background-image: url(nasa-hubble-space-telescope-TZIorZKAXYo-unsplash.jpg);
+ }
+    
+
+ .card3{
+    border: 2px solid black;
+    height: 50vh;
+    width: 30vh;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url(nick-da-fonseca-opOFIBUBmYM-unsplash.jpg);
+ }
+
+ .setting{
+    margin: 30px;
+    
+
+ }
+
+ .setting h1{
+   font-size: 3em;
+ }
+
+ .image{
+    text-align: center;
+    margin-top: 80px;
+    
+ }
+
+ .home{
+    margin: 20vh;
+ }
+
+ .image2{
+    text-align: center;
+    
+ }
+
+
+ body{
+   background-color: #0a0a23;
+ }
+
+#game{
+   width: 500px;
+   max-height: 400px;
+   background-color: #ffffff;
+   color: #ffffff;
+   margin-top:30px ;
+   margin-bottom: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px;
+}
+
+#controls #stats{
+border: 1px solid #0a0a23, ;
+color: #0a0a23;
+pad: 5px;
+}
+
+#monsterStats{
+   border: 1px solid #0a0a23;
+   padding: 5px;
+   color: #c70d0d;
+   background-color: #c70d0d;
+   display: block;
+}
+
+.stat{
+   padding-right: 10px;
+}
+.controls{
+   cursor: pointer;
+   color: #0a0a23;
+   background-color: #feac32;
+   background-image: linear-gradient(#fecc4c, #ffac33);
+   border: 3px solid #feac32;
+}
+
+
+
+    
+    
+

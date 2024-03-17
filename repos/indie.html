@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Website</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      background-color: #555;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a onclick="changeText()">Change Text</a>
+  <a onclick="toggleBackground()">Toggle Background</a>
+  <a onclick="increaseFontSize()">Increase Font Size</a>
+  <a onclick="resetStyles()">Reset Styles</a>
+</nav>
+
+
+
+
+</div>
+
+<div class="content">
+  <h2 id="demo">Click on the navigation items to interact!</h2>
+  <button onclick="toggleVisibility()">Toggle Visibility</button>
+</div>
+
+<script>
+  function changeText() {
+    document.getElementById('demo').innerHTML = 'Text Changed!';
+  }
+
+  function toggleBackground() {
+    document.body.style.backgroundColor = document.body.style.backgroundColor === 'white' ? '#f0f0f0' : 'white';
+  }
+
+  function increaseFontSize() {
+    var currentSize = parseInt(window.getComputedStyle(document.getElementById('demo')).fontSize);
+    document.getElementById('demo').style.fontSize = (currentSize + 2) + 'px';
+  }
+
+  function toggleVisibility() {
+    var content = document.querySelector('.content');
+    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+  }
+
+  function resetStyles() {
+    document.getElementById('demo').innerHTML = 'Click on the navigation items to interact!';
+    document.body.style.backgroundColor = '#f0f0f0';
+    document.getElementById('demo').style.fontSize = '24px';
+  }
+</script>
+
+</body>
+</html>

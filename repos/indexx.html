@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* .custom-button {
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+    /* }
+
+    /* Style the button in its normal state */
+    /* .custom-button:hover {
+      background-color: red;
+      color: rgb(46, 122, 194);
+    } */ 
+body{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  display: flex;
+  background-color: brown;
+ justify-items: center;
+ 
+ 
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+ 
+
+ 
+  
+}
+.navbar :first-child{
+  margin-left: 60px;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: aqua;
+  
+}
+
+
+
+
+
+
+  </style>
+
+</head>
+<body>
+<!-- <nav>
+<div class="div1">
+
+<h1 onclick="showmesage()">laptop</h1>
+<p id="demo"></p>
+</div>
+
+
+<div class="div">
+
+<button class="custom-button" onclick="showred()">REDbox</button>
+<p id="demo1"></p>
+</div> -->
+
+
+ <!-- <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum voluptatum et autem quos a assumenda provident natus sapiente quo. Corporis consequuntur, libero natus quaerat, et soluta optio, ut ad nisi enim eaque! Blanditiis quia commodi odit assumenda nulla distinctio corrupti magnam quis! Totam repudiandae, sed ratione dicta explicabo expedita eveniet!</p>  -->
+
+<nav>
+  <div class="navbar">
+    <ul>
+      <li><a id="home" onclick="change()" href="#">Home</a></li>
+       <li><a id="service" onclick="turnn()" href="#">service</a></li> 
+      <li><a id="about" onclick="turn()" href="#">about</a></li>
+      
+    </ul>
+
+    
+</nav>
+
+<!-- <div class="div">
+  <button onclick="changepara()">clickme</button>
+
+   <p id="demo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat labore ab similique reiciendis sint ipsam saepe nulla perferendis et! Eligendi beatae quibusdam distinctio? Repellat, quod. Doloribus deleniti eos earum libero cupiditate recusandae autem, culpa nam inventore quidem possimus perferendis quaerat facilis tenetur! Expedita, autem voluptatem totam earum deserunt excepturi. Perspiciatis!</p> 
+  
+</div> -->
+
+ <img height="700px" width="800px" src="nasa-hubble-space-telescope-TZIorZKAXYo-unsplash.jpg" alt=""> 
+
+
+
+
+
+
+<script>
+  function change(){
+    document.getElementById('home').innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis adipisci assu';
+  }
+
+
+  function turn(){
+    document.getElementById('about').innerHTML =' <img src="nasa-hubble-space-telescope-TZIorZKAXYo-unsplash.jpg" alt=""> ';
+  }
+
+   function turnn(){
+     document.getElementById('service').innerHTML = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum volup';
+   }
+
+
+
+
+  // function changepara(){
+  //   document.getElementById('demo').innerHTML = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat labore ab similique reiciendis sint ipsam saepe nulla perferendis et! Eligendi beatae qu';
+  // }
+// function showmesage(){
+//   document.getElementById('demo').innerHTML= 'buuton clicked!';
+// }
+
+// function showred(){
+//   document.getElementById('demo1').innerHTML = 'red color';
+// }
+
+</script>
+
+  
+</body>
+</html>
+
+
+

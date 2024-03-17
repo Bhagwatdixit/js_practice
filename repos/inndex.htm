@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Website</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      background-color: #555;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#" onclick="changeBackgroundColor()">Change Color</a></li>
+    <li><a href="#" onclick="showAlert()">Show Alert</a></li>
+    <li><a href="#" onclick="toggleVisibility()">Toggle Visibility</a></li>
+    <li><a href="#" onclick="updateContent()">Update Content</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <h2>Click on the navigation items to interact!</h2>
+  <p id="demo">This is the initial content.</p>
+</div>
+
+<script>
+  function changeBackgroundColor() {
+    document.body.style.backgroundColor = getRandomColor();
+  }
+
+  function showAlert() {
+    alert("Hello, this is an alert!");
+  }
+
+  function toggleVisibility() {
+    var content = document.querySelector('.content');
+    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+  }
+
+  function updateContent() {
+    document.getElementById('demo').innerHTML = 'Content Updated!';
+  }
+
+  function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+</script>
+
+</body>
+</html>
+
